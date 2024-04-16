@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #27282c;
+
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+/* make div's 1/2 of screen */
+
+#input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    make
+}
+
+
+
+#output-box {
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #1f2124;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    
+
+}
+
+input {
+    padding: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    background-color: #1f2124;
+    color: whitesmoke;
+    margin: 0.5rem;
+    width: 50%;
+}
+
+button {
+    margin: 2em;
+    padding: 1.2rem;
+    width: 50%;
+
+}
+@keyframes bottomSlide {
+    0% {
+      transform: translateY(-100%) scale(1);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  #output-box {
+    animation: bottomSlide 1s ease-out forwards;
+  }
+
+
+
+  @keyframes bottomUp {
+    0% {
+      transform: translateY(100%) scale(1);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+  #input{
+    animation: bottomUp 1s ease-out forwards;
+  }
+
+  span {
+    color: rgb(62, 207, 188);
+    
+  }
+  #output-box{
+    color: rgb(62, 207, 188);
+  }
+
+ 
+/* div ^ flex auto sometime messes */
+
+
+
+.links,
+img,
+li {
+    display: inline-flex;
+}
+
+img {
+    width: 4em;
+    padding: 0.2rem;
+}
+
+.footer-list .links:hover img {
+    filter: brightness(150%);
+    opacity: 0.9;
+}
+
+#footer {
+    color: #3ecfbc;
+    font-size: 1.1rem;
+} 
+
+#submit-btn {
+    position: relative;
+     
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    font-weight: 45 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-color: #1f2124
+
+
+}
+
+#submit-btn:hover {
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 0.5em;
+    box-shadow: 0 0 40px var(--clr);
+    
+}
+#submit-btn::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+    transform: translateX(-50%) skewX(180deg);
+transition: 0.5s;
+
+}
+
+#submit-btn::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+    transform: translateX(50%) skewX(180deg);
+transition: 0.5s;
+
+}
+
+#submit-btn span{
+    position: relative;
+    z-index: 1;
+
+    
+
+}
+
+
+
+
+
+
+    
+    
