@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/profit.html"
+status = 200
